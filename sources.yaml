@@ -1,0 +1,47 @@
+# Each source: id, authority, country, language, kind (openfda | govuk | rss | html_links), url and options.
+# `min_items` is the validation floor: a run that returns fewer items marks the source unhealthy.
+sources:
+  - id: fda_recalls
+    authority: US FDA
+    country: US
+    language: en
+    kind: openfda
+    url: https://api.fda.gov/drug/enforcement.json
+    limit: 100
+    min_items: 20
+
+  - id: fda_medwatch
+    authority: US FDA
+    country: US
+    language: en
+    kind: rss
+    url: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml
+    min_items: 5
+
+  - id: mhra_govuk
+    authority: UK MHRA
+    country: UK
+    language: en
+    kind: govuk
+    url: https://www.gov.uk/api/search.json
+    organisation: medicines-and-healthcare-products-regulatory-agency
+    limit: 50
+    min_items: 20
+
+  - id: aemps_es
+    authority: Spain AEMPS
+    country: ES
+    language: es
+    kind: rss
+    url: https://www.aemps.gob.es/feed/
+    min_items: 5
+
+  - id: cdsco_notices
+    authority: India CDSCO
+    country: IN
+    language: en
+    kind: html_links
+    url: https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/
+    render: browser          # load with a headless browser (Playwright) so script-built tables appear
+    link_pattern: '\.pdf($|\?)|/Public-Notices/.+'
+    min_items: 5
