@@ -1,0 +1,26 @@
+name: evaluate
+on:
+  workflow_dispatch:
+    inputs:
+      per_class: {description: "recalls sampled per FDA class", default: "50"}
+permissions:
+  contents: write
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements.txt
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python eval/evaluate.py --per-class ${{ github.event.inputs.per_class }}
+      - run: |
+          git config user.name "hawatch-bot"
+          git config user.email "hawatch-bot@users.noreply.github.com"
+          git pull --rebase
+          git add eval
+          git diff --cached --quiet || git commit -m "evaluation run"
+          git push
