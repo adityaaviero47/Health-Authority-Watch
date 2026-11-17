@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Example regulator</title>
+<entry><title>Guidance on electronic product information</title><link href="https://example.org/guidance/epi"/>
+<id>tag:example.org,2026:epi</id><updated>2026-11-15T12:00:00Z</updated><published>2026-11-01T12:00:00Z</published>
+<summary>Updated guidance.</summary></entry></feed>
