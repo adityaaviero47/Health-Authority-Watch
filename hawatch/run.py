@@ -85,8 +85,8 @@ def render_report(run, tracked):
          f"Classifier: `{run['model']}` · items tracked: {tracked}", "", "## Source health", "",
          "| Source | Authority | Items | Time (s) | Status |", "|---|---|---|---|---|"]
     for h in run["health"]:
-        L.append(f"| {h['source']} | {h['authority']} | {h['items']} | {h['seconds']} | "
-                 f"{'OK' if h['ok'] else 'FAIL (' + '; '.join(h['problems']) + f') x{h['fail_streak']}'} |")
+        status = "OK" if h["ok"] else "FAIL ({}) x{}".format("; ".join(h["problems"]), h["fail_streak"])
+        L.append(f"| {h['source']} | {h['authority']} | {h['items']} | {h['seconds']} | {status} |")
     L += ["", f"## New and revised ({len(run['changes'])})", ""]
     if not run["changes"]:
         L.append("Nothing new since the last run.")
