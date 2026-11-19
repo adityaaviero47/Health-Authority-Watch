@@ -1,0 +1,209 @@
+{
+ "run_at": "2026-11-19T22:23Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.4,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 61.6,
+   "fail_streak": 3
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "fda_medwatch",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medical-device-correction-update-lunar-g3-bpap-system-model-lg3800-30vt",
+   "title": "Medical Device Correction Update Luna® G3 BPAP System (Model LG3800-30VT)",
+   "published": "2026-11-19",
+   "updated": "",
+   "summary": "React Health (3B Medical, Inc.) is providing notice of a voluntary medical device correction (recall) involving specific Luna G3 BPAP System (Model LG3800-30VT) devices due to a data handling issue that may result in incorrect therapy pressure statistical data when the device is operated with Target",
+   "extra": {
+    "native_id": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medical-device-correction-update-lunar-g3-bpap-system-model-lg3800-30vt"
+   },
+   "watch": {},
+   "item_id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medical-device-correction-update-lunar-g3-bpap-system-model-lg3800-30vt",
+   "assessment": {
+    "id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medical-device-correction-update-lunar-g3-bpap-system-model-lg3800-30vt",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "recall",
+    "english_title": "Medical Device Correction Update Luna® G3 BPAP System (Model LG3800-30VT)",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_medwatch",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
+   "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
+   "published": "2026-11-19",
+   "updated": "",
+   "summary": "BBMI corrects Caresite devices due to issue with internal piston remaining depressed following disconnection, preventing the valve from fully closing.",
+   "extra": {
+    "native_id": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device"
+   },
+   "watch": {},
+   "item_id": "fda_medwatch:http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
+   "assessment": {
+    "id": "fda_medwatch:http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/international-recognition-procedure",
+   "title": "International Recognition Procedure",
+   "published": "2026-11-19",
+   "updated": "2026-11-19T15:00:42Z",
+   "summary": "How to use the procedure for medicines licensing applications.",
+   "extra": {
+    "native_id": "/government/publications/international-recognition-procedure",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/international-recognition-procedure",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/international-recognition-procedure",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "International Recognition Procedure",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/collections/mhra-conferences-and-events",
+   "title": "Conferences and events",
+   "published": "2026-11-19",
+   "updated": "2026-11-19T13:18:57Z",
+   "summary": "MHRA conferences and events",
+   "extra": {
+    "native_id": "/government/collections/mhra-conferences-and-events",
+    "format": "document_collection"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/collections/mhra-conferences-and-events",
+   "assessment": {
+    "id": "mhra_govuk:/government/collections/mhra-conferences-and-events",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Conferences and events",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/mhra-appoints-senior-nhs-executive-as-new-chief-finance-and-commercial-officer",
+   "title": "MHRA appoints senior NHS executive as new Chief Finance and Commercial Officer",
+   "published": "2026-11-19",
+   "updated": "2026-11-19T11:45:06Z",
+   "summary": "The Medicines and Healthcare products Regulatory Agency (MHRA) has appointed a new Chief Financial and Commercial Officer to drive forward the financial aspects of its new five-year strategy.",
+   "extra": {
+    "native_id": "/government/news/mhra-appoints-senior-nhs-executive-as-new-chief-finance-and-commercial-officer",
+    "format": "press_release"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/mhra-appoints-senior-nhs-executive-as-new-chief-finance-and-commercial-officer",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/mhra-appoints-senior-nhs-executive-as-new-chief-finance-and-commercial-officer",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "MHRA appoints senior NHS executive as new Chief Finance and Commercial Officer",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-sobre-la-actualizacion-de-las-recomendaciones-anticonceptivas-durante-el-tratamiento-con-tirzepatida/",
+   "title": "La AEMPS informa sobre la actualización de las recomendaciones anticonceptivas durante el tratamiento con tirzepatida",
+   "published": "2026-11-19",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 19 de noviembre de 2026 Categoría: medicamentos de uso humano, seguridad Referencia: MUH (FV), 04/2026 La información disponible sobre el efecto del principio activo de Mounjaro en la farmacocinética y la eficacia de los anticonceptivos orales en mujeres con obesidad, sobrepeso o diabetes mellitus tipo 2 es limitada A la […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46770"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46770",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46770",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "La AEMPS informa sobre la actualización de las recomendaciones anticonceptivas durante el tratamiento con tirzepatida",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
