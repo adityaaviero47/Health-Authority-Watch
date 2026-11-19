@@ -1,0 +1,184 @@
+{
+ "run_at": "2026-11-19T10:41Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.7,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.3,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 60.7,
+   "fail_streak": 2
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "fda_medwatch",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
+   "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
+   "published": "2026-11-19",
+   "updated": "",
+   "summary": "Outset Medical Tablo Console and TabloCart with Prefiltration Drawer power cord connections may overheat, posing fire, burn, and treatment interruption risks.",
+   "extra": {
+    "native_id": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer"
+   },
+   "watch": {},
+   "item_id": "fda_medwatch:http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
+   "assessment": {
+    "id": "fda_medwatch:http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/the-innovative-devices-access-pathway-idap",
+   "title": "The Innovative Devices Access Pathway (IDAP)",
+   "published": "2026-11-19",
+   "updated": "2026-11-19T09:23:27Z",
+   "summary": "The Innovative Devices Access Pathway (IDAP) pilot is designed to accelerate the development of innovative medical devices that meet an unmet clinical need in the NHS and support their integration into the UK market.",
+   "extra": {
+    "native_id": "/government/publications/the-innovative-devices-access-pathway-idap",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/the-innovative-devices-access-pathway-idap",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/the-innovative-devices-access-pathway-idap",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "The Innovative Devices Access Pathway (IDAP)",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/consultations/consultation-on-the-regulation-of-gene-therapy-medicinal-products",
+   "title": "Consultation on the regulation of Gene therapy medicinal products",
+   "published": "2026-11-19",
+   "updated": "2026-11-19T09:00:04Z",
+   "summary": "We are seeking views on proposed updates to the definition of Gene therapy medicinal products to better reflect advances in science and manufacturing.",
+   "extra": {
+    "native_id": "/government/consultations/consultation-on-the-regulation-of-gene-therapy-medicinal-products",
+    "format": "consultation_outcome"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/consultations/consultation-on-the-regulation-of-gene-therapy-medicinal-products",
+   "assessment": {
+    "id": "mhra_govuk:/government/consultations/consultation-on-the-regulation-of-gene-therapy-medicinal-products",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Consultation on the regulation of Gene therapy medicinal products",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/government-backs-modernisation-of-gene-therapy-definitions",
+   "title": "Government backs modernisation of gene therapy definitions",
+   "published": "2026-11-19",
+   "updated": "2026-11-19T09:00:04Z",
+   "summary": "Proposed changes will provide clearer regulatory pathway for certain synthetic gene therapies, supporting life sciences innovation while maintaining safety.",
+   "extra": {
+    "native_id": "/government/news/government-backs-modernisation-of-gene-therapy-definitions",
+    "format": "press_release"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/government-backs-modernisation-of-gene-therapy-definitions",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/government-backs-modernisation-of-gene-therapy-definitions",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "Government backs modernisation of gene therapy definitions",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-actualiza-las-instrucciones-relativas-a-la-documentacion-necesaria-para-la-solicitud-de-autorizacion-de-productos-de-cuidado-personal/",
+   "title": "La AEMPS actualiza las instrucciones relativas a la documentación necesaria para la solicitud de autorización de productos de cuidado personal",
+   "published": "2026-11-19",
+   "updated": "",
+   "summary": "Generar pdf Fecha de publicación: 19 de noviembre de 2026 Categoría: biocidas y cuidado personal Referencia: BCP, 09/2026 El objetivo de la actualización es adaptar las instrucciones a los cambios normativos recientes y mejorar la evaluación de los expedientes presentados La revisión incorpora nuevos requisitos y aclaraciones regulatorias relacionados, entre otros aspectos, con microplásticos, alérgenos, […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46757"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46757",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46757",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS actualiza las instrucciones relativas a la documentación necesaria para la solicitud de autorización de productos de cuidado personal",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
