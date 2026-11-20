@@ -1,0 +1,81 @@
+{
+ "run_at": "2026-11-20T22:01Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.3,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.3,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 62.0,
+   "fail_streak": 5
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-sobre-la-deteccion-de-un-certificado-de-marcado-ce-falsificado-de-la-empresa-nanjing-bestview-laser-st-co-ltd/",
+   "title": "La AEMPS informa sobre la detección de un certificado de marcado CE falsificado de la empresa Nanjing Bestview Laser S&T Co., Ltd.",
+   "published": "2026-11-20",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 20 de noviembre de 2026 Categoría: productos sanitarios, Certificado CE falsificado. Referencia: PS, 47/2026 La Agencia ha recibido una comunicación de las autoridades sanitarias alemanas relativa a la detección de este certificado falsificado de la empresa Nanjing Bestview Laser S&T Co., Ltd, de China El certificado original fue emitido para […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46780"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46780",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46780",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS informa sobre la detección de un certificado de marcado CE falsificado de la empresa Nanjing Bestview Laser S&T Co., Ltd.",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
