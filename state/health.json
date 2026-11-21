@@ -5,12 +5,12 @@
   "items": 30,
   "ok": true,
   "problems": [],
-  "seconds": 1.2,
+  "seconds": 1.4,
   "source": "aemps_es"
  },
  "cdsco_notices": {
   "authority": "India CDSCO",
-  "fail_streak": 6,
+  "fail_streak": 7,
   "items": 0,
   "ok": false,
   "problems": [
@@ -26,7 +26,7 @@
   "items": 20,
   "ok": true,
   "problems": [],
-  "seconds": 0.1,
+  "seconds": 0.2,
   "source": "fda_medwatch"
  },
  "fda_recalls": {
@@ -35,7 +35,7 @@
   "items": 100,
   "ok": true,
   "problems": [],
-  "seconds": 0.2,
+  "seconds": 0.3,
   "source": "fda_recalls"
  },
  "mhra_govuk": {
@@ -44,7 +44,7 @@
   "items": 50,
   "ok": true,
   "problems": [],
-  "seconds": 0.3,
+  "seconds": 1.0,
   "source": "mhra_govuk"
  }
 }
