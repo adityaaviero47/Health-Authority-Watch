@@ -1,0 +1,106 @@
+{
+ "run_at": "2026-11-23T11:06Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.5,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.6,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 60.6,
+   "fail_streak": 10
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-lanza-su-encuesta-bienal-para-conocer-la-satisfaccion-con-sus-servicios/",
+   "title": "La AEMPS lanza su encuesta bienal para conocer la satisfacción con sus servicios",
+   "published": "2026-11-23",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 23 de noviembre de 2026 Categoría: la AEMPS Referencia: AEMPS, 35/2026 La encuesta se dirige a los distintos grupos de interés de la Agencia para conocer sus necesidades, expectativas y grado de satisfacción con los servicios que presta La ciudadanía, los profesionales de la sanidad y las organizaciones y sociedades […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46784"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46784",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46784",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS lanza su encuesta bienal para conocer la satisfacción con sus servicios",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/corre-sin-resistencias-reafirma-su-exito-con-miles-de-participantes-en-toda-espana/",
+   "title": "“¡Corre Sin Resistencias!” reafirma su éxito con miles de participantes en toda España",
+   "published": "2026-11-23",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 23 de noviembre de 2026 Categoría: la AEMPS Referencia: AEMPS, 34/2026 Cerca de 5.000 personas participaron en universidades y ciudades de todo el país en su VI edición La iniciativa consolidó las cifras récord alcanzadas en 2025 y se mantiene entre las ediciones con mayor participación desde su creación Universidades […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46782"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46782",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46782",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "“¡Corre Sin Resistencias!” reafirma su éxito con miles de participantes en toda España",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
