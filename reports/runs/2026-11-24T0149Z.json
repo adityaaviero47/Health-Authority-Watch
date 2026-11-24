@@ -1,0 +1,315 @@
+{
+ "run_at": "2026-11-24T01:49Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.9,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 60.7,
+   "fail_streak": 11
+  }
+ ],
+ "changes": [
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/orphan-registered-medicinal-products",
+   "title": "Orphan registered medicinal products",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T17:02:52Z",
+   "summary": "A list of authorised orphan medicinal products registered by the UK licensing authority.",
+   "extra": {
+    "native_id": "/government/publications/orphan-registered-medicinal-products",
+    "format": "decision"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/orphan-registered-medicinal-products",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/orphan-registered-medicinal-products",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Orphan registered medicinal products",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/improving-patient-information",
+   "title": "Improving Patient Information",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T16:59:06Z",
+   "summary": "MHRA's Improving Patient Information project aims to modernise how medicines product information is delivered, making it more accessible, trusted, and future-ready.",
+   "extra": {
+    "native_id": "/government/publications/improving-patient-information",
+    "format": "regulation"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/improving-patient-information",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/improving-patient-information",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Improving Patient Information",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/ai-in-mental-health-airlock-to-support-safe-innovation",
+   "title": "AI in Mental Health Airlock to support safe innovation",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T16:46:00Z",
+   "summary": "A new regulatory sandbox will explore how safety approaches in innovative digital mental health technologies can be effectively evaluated and regulated.",
+   "extra": {
+    "native_id": "/government/news/ai-in-mental-health-airlock-to-support-safe-innovation",
+    "format": "press_release"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/ai-in-mental-health-airlock-to-support-safe-innovation",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/ai-in-mental-health-airlock-to-support-safe-innovation",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "AI in Mental Health Airlock to support safe innovation",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/apply-for-the-ai-in-mental-health-airlock",
+   "title": "Apply for the AI in Mental Health Airlock",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T16:40:36Z",
+   "summary": "The call for applications for the AI in Mental Health Airlock is now open.",
+   "extra": {
+    "native_id": "/government/publications/apply-for-the-ai-in-mental-health-airlock",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/apply-for-the-ai-in-mental-health-airlock",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/apply-for-the-ai-in-mental-health-airlock",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Apply for the AI in Mental Health Airlock",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/collections/ai-airlock-a-regulatory-sandbox-for-ai-enabled-medical-devices",
+   "title": "AI Airlock: a regulatory sandbox for AI enabled Medical Devices",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T16:39:54Z",
+   "summary": "A proactive, collaborative, first of its kind approach to identifying and addressing the challenges faced by AI enabled Medical Devices.",
+   "extra": {
+    "native_id": "/government/collections/ai-airlock-a-regulatory-sandbox-for-ai-enabled-medical-devices",
+    "format": "document_collection"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/collections/ai-airlock-a-regulatory-sandbox-for-ai-enabled-medical-devices",
+   "assessment": {
+    "id": "mhra_govuk:/government/collections/ai-airlock-a-regulatory-sandbox-for-ai-enabled-medical-devices",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "AI Airlock: a regulatory sandbox for AI enabled Medical Devices",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/collections/digital-mental-health-technology",
+   "title": "Digital Mental Health Technology",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T16:39:26Z",
+   "summary": "Wellcome have funded the MHRA and NICE to focus on clarifying effective regulation and evaluation of digital mental health technology (DMHT).",
+   "extra": {
+    "native_id": "/government/collections/digital-mental-health-technology",
+    "format": "document_collection"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/collections/digital-mental-health-technology",
+   "assessment": {
+    "id": "mhra_govuk:/government/collections/digital-mental-health-technology",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Digital Mental Health Technology",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/medical-devices-given-exceptional-use-authorisations",
+   "title": "Medical devices given exceptional use authorisations",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T15:30:36Z",
+   "summary": "List of manufacturers and their medical devices granted an exemption by MHRA. The list also includes manufacturers whose exemption expired or was cancelled.",
+   "extra": {
+    "native_id": "/government/publications/medical-devices-given-exceptional-use-authorisations",
+    "format": "decision"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/medical-devices-given-exceptional-use-authorisations",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/medical-devices-given-exceptional-use-authorisations",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Medical devices given exceptional use authorisations",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+   "title": "GLP-1 medicines for weight loss and diabetes: what you need to know",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T11:54:03Z",
+   "summary": "Guidance on the safe and effective use of GLP-1 medicines for weight loss and diabetes.",
+   "extra": {
+    "native_id": "/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "GLP-1 medicines for weight loss and diabetes: what you need to know",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/guidance/clinical-trials-for-medicines-modifying-a-clinical-trial-approval",
+   "title": "Clinical trials for medicines: modifying a clinical trial approval",
+   "published": "2026-11-23",
+   "updated": "2026-11-23T11:09:45Z",
+   "summary": "Guidance on the various types of modifications that can be made to a clinical trial approval.",
+   "extra": {
+    "native_id": "/guidance/clinical-trials-for-medicines-modifying-a-clinical-trial-approval",
+    "format": "detailed_guide"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/guidance/clinical-trials-for-medicines-modifying-a-clinical-trial-approval",
+   "assessment": {
+    "id": "mhra_govuk:/guidance/clinical-trials-for-medicines-modifying-a-clinical-trial-approval",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Clinical trials for medicines: modifying a clinical trial approval",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-de-la-retirada-de-determinadas-pastas-esenta-stomahesive-debido-a-la-posibilidad-de-contaminacion-con-material-extrano/",
+   "title": "La AEMPS informa de la retirada de determinadas pastas Esenta Stomahesive debido a la posibilidad de contaminación con material extraño",
+   "published": "2026-11-23",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 23 de noviembre de 2026 Categoría: productos sanitarios/seguridad Referencia: PS, 48/2026 La retirada afecta a determinados lotes en los que no puede descartarse la presencia de material extraño La contaminación podría afectar al funcionamiento del producto y dar lugar a efectos como irritación, inflamación, infección leve o reacciones alérgicas La […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46788"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46788",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46788",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "recall",
+    "english_title": "La AEMPS informa de la retirada de determinadas pastas Esenta Stomahesive debido a la posibilidad de contaminación con material extraño",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
