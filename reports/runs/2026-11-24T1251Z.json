@@ -1,0 +1,133 @@
+{
+ "run_at": "2026-11-24T12:51Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.3,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 63.6,
+   "fail_streak": 12
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/mhra-performance-data",
+   "title": "MHRA Performance Data",
+   "published": "2026-11-24",
+   "updated": "2026-11-24T11:27:39Z",
+   "summary": "Performance data for MHRA key performance indicators (KPIs) and information on the expected timeline to complete a specific regulatory function.",
+   "extra": {
+    "native_id": "/government/publications/mhra-performance-data",
+    "format": "transparency"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/mhra-performance-data",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/mhra-performance-data",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "MHRA Performance Data",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-sobre-la-actualizacion-de-las-recomendaciones-europeas-para-la-gestion-de-impurezas-de-nitrosaminas-en-medicamentos-de-uso-humano/",
+   "title": "La AEMPS informa sobre la actualización de las recomendaciones europeas para la gestión de impurezas de nitrosaminas en medicamentos de uso humano",
+   "published": "2026-11-24",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 24 de noviembre de 2026 Categoría: medicamentos de uso humano Referencia: MUH, 12/2026 La nueva versión del documento actualiza los límites de ingesta aceptable para determinadas impurezas y amplía, bajo determinadas condiciones, los plazos para implementar acciones correctivas y preventivas La AEMPS recuerda la importancia de mantener actualizadas las evaluaciones […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46791"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46791",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46791",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS informa sobre la actualización de las recomendaciones europeas para la gestión de impurezas de nitrosaminas en medicamentos de uso humano",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/drug-device-alerts/class-2-medicines-recall-quadrant-pharmaceuticals-limited-parallel-import-brintellix-5-mg-film-coated-tablets-el-26-a-slash-49",
+   "title": "Class 2 Medicines Recall: Quadrant Pharmaceuticals Limited (Parallel Import), Brintellix 5 mg film-coated tablets, EL(26)A/49",
+   "published": "2026-11-24",
+   "updated": "2026-11-24T10:00:09Z",
+   "summary": "Quadrant Pharmaceuticals Ltd is recalling one batch of Brintellix 5 mg film-coated tablets (mislabelled as 10 mg tablets) due to a labelling error with the product strength impacting an unknown number of units.",
+   "extra": {
+    "native_id": "/drug-device-alerts/class-2-medicines-recall-quadrant-pharmaceuticals-limited-parallel-import-brintellix-5-mg-film-coated-tablets-el-26-a-slash-49",
+    "format": "medical_safety_alert"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/drug-device-alerts/class-2-medicines-recall-quadrant-pharmaceuticals-limited-parallel-import-brintellix-5-mg-film-coated-tablets-el-26-a-slash-49",
+   "assessment": {
+    "id": "mhra_govuk:/drug-device-alerts/class-2-medicines-recall-quadrant-pharmaceuticals-limited-parallel-import-brintellix-5-mg-film-coated-tablets-el-26-a-slash-49",
+    "relevance": "low",
+    "severity": 3,
+    "category": "recall",
+    "english_title": "Class 2 Medicines Recall: Quadrant Pharmaceuticals Limited (Parallel Import), Brintellix 5 mg film-coated tablets, EL(26)A/49",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
