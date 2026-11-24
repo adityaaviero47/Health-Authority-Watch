@@ -1,0 +1,234 @@
+{
+ "run_at": "2026-11-24T23:37Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.5,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.8,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 60.8,
+   "fail_streak": 13
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "fda_medwatch",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-certain-lots-six-injectable-drug-products-due-presence",
+   "title": "Par Health Issues Voluntary Nationwide Recall of Certain Lots of Six Injectable Drug Products Due to the Presence of Particulate Matter",
+   "published": "2026-11-24",
+   "updated": "",
+   "summary": "FOR IMMEDIATE RELEASE - ROCHESTER, MI– November 23, 2026 – Par Health is recalling 46 lots across six injectable drug products to the hospital/user level. This recall is being conducted due to the presence of particulate matter, identified as cellulose, polystyrene, stopper material, and aluminum th",
+   "extra": {
+    "native_id": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-certain-lots-six-injectable-drug-products-due-presence"
+   },
+   "watch": {},
+   "item_id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-certain-lots-six-injectable-drug-products-due-presence",
+   "assessment": {
+    "id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/par-health-issues-voluntary-nationwide-recall-certain-lots-six-injectable-drug-products-due-presence",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Par Health Issues Voluntary Nationwide Recall of Certain Lots of Six Injectable Drug Products Due to the Presence of Particulate Matter",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_medwatch",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/golden-state-medical-supply-inc-issues-voluntary-nationwide-recall-ibuprofen-800mg-tablets-due",
+   "title": "Golden State Medical Supply, Inc. Issues a Voluntary Nationwide Recall of Ibuprofen 800mg Tablets. Due to Potential Aluminum Particulate Contamination Localized on the Surface of the Tablets",
+   "published": "2026-11-24",
+   "updated": "",
+   "summary": "FOR IMMEDIATE RELEASE – November 23, 2026, Golden State Medical Supply, Incorporated (GSMS, Inc.) - Camarillo, CA has initiated a voluntary consumer level recall of Ibuprofen 800mg Tablets (NDC 51407-841-05) Lot# GS069303 due to potential aluminum particulate contamination localized on the surface o",
+   "extra": {
+    "native_id": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/golden-state-medical-supply-inc-issues-voluntary-nationwide-recall-ibuprofen-800mg-tablets-due"
+   },
+   "watch": {},
+   "item_id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/golden-state-medical-supply-inc-issues-voluntary-nationwide-recall-ibuprofen-800mg-tablets-due",
+   "assessment": {
+    "id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/golden-state-medical-supply-inc-issues-voluntary-nationwide-recall-ibuprofen-800mg-tablets-due",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Golden State Medical Supply, Inc. Issues a Voluntary Nationwide Recall of Ibuprofen 800mg Tablets. Due to Potential Aluminum Particulate Contamination Localized on the Surface of the Tablets",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_medwatch",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/green-lumber-holdings-llc-issues-recall-and-consumer-safety-alert",
+   "title": "Green Lumber Holdings, LLC Issues Recall and Consumer Safety Alert",
+   "published": "2026-11-24",
+   "updated": "",
+   "summary": "COSTA MESA, Calif., Nov. 19, 2026 /PRNewswire/ -- Green Lumber Holdings, LLC (\"Green Lumber\") is recalling lot GL01 (expiration 09/27) of Green Lumber Natural Fuel For Men due to undeclared tadalafil. Green Lumber will initiate the recall on November 19, 2026, to the consumer level.",
+   "extra": {
+    "native_id": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/green-lumber-holdings-llc-issues-recall-and-consumer-safety-alert"
+   },
+   "watch": {},
+   "item_id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/green-lumber-holdings-llc-issues-recall-and-consumer-safety-alert",
+   "assessment": {
+    "id": "fda_medwatch:http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/green-lumber-holdings-llc-issues-recall-and-consumer-safety-alert",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Green Lumber Holdings, LLC Issues Recall and Consumer Safety Alert",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/mhra-sets-out-regulatory-approach-to-next-generation-innovation",
+   "title": "MHRA sets out regulatory approach to next generation innovation",
+   "published": "2026-11-24",
+   "updated": "2026-11-24T15:02:39Z",
+   "summary": "A round-up of the agency's announcements during London Life Sciences Week 2026, including at the inaugural DIA-MHRA Global Summit.",
+   "extra": {
+    "native_id": "/government/news/mhra-sets-out-regulatory-approach-to-next-generation-innovation",
+    "format": "news_story"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/mhra-sets-out-regulatory-approach-to-next-generation-innovation",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/mhra-sets-out-regulatory-approach-to-next-generation-innovation",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "MHRA sets out regulatory approach to next generation innovation",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/drug-device-alerts/class-4-medicines-defect-notification-atnahs-pharma-uk-limited-toradol-30-mg-slash-ml-solution-for-injection-el-26-a-slash-50",
+   "title": "Class 4 Medicines Defect Notification: Atnahs Pharma UK Limited, Toradol 30 mg/mL Solution for Injection, EL(26)A/50",
+   "published": "2026-11-24",
+   "updated": "2026-11-24T14:00:07Z",
+   "summary": "Atnahs Pharma UK Ltd has informed the MHRA that safety information relating to gastrointestinal anastomotic leakage was omitted from the Patient Information Leaflets (PILs) supplied with certain batches of Toradol 30 mg/mL solution for injection.",
+   "extra": {
+    "native_id": "/drug-device-alerts/class-4-medicines-defect-notification-atnahs-pharma-uk-limited-toradol-30-mg-slash-ml-solution-for-injection-el-26-a-slash-50",
+    "format": "medical_safety_alert"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/drug-device-alerts/class-4-medicines-defect-notification-atnahs-pharma-uk-limited-toradol-30-mg-slash-ml-solution-for-injection-el-26-a-slash-50",
+   "assessment": {
+    "id": "mhra_govuk:/drug-device-alerts/class-4-medicines-defect-notification-atnahs-pharma-uk-limited-toradol-30-mg-slash-ml-solution-for-injection-el-26-a-slash-50",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "Class 4 Medicines Defect Notification: Atnahs Pharma UK Limited, Toradol 30 mg/mL Solution for Injection, EL(26)A/50",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/drug-device-alerts/field-safety-notices-16-to-20-november-2026",
+   "title": "Field Safety Notices: 16 to 20 November 2026",
+   "published": "2026-11-24",
+   "updated": "2026-11-24T13:05:48Z",
+   "summary": "List of Field Safety Notices from 16 to 20 November 2026.",
+   "extra": {
+    "native_id": "/drug-device-alerts/field-safety-notices-16-to-20-november-2026",
+    "format": "medical_safety_alert"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/drug-device-alerts/field-safety-notices-16-to-20-november-2026",
+   "assessment": {
+    "id": "mhra_govuk:/drug-device-alerts/field-safety-notices-16-to-20-november-2026",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "Field Safety Notices: 16 to 20 November 2026",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/aprobado-el-nuevo-estatuto-de-la-aemps-que-refuerza-la-estructura-de-la-agencia-y-la-adaptar-a-las-necesidades-actuales/",
+   "title": "Aprobado el nuevo estatuto de la AEMPS que refuerza la estructura de la Agencia y la adapta a las necesidades actuales",
+   "published": "2026-11-24",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 24 de noviembre de 2026 Categoría: la AEMPS Referencia: AEMPS, 36/2026 El real decreto adapta el régimen de la AEMPS a la normativa actual convirtiéndola en agencia estatal y dotándola de una estructura organizativa y funcional más moderna, eficiente y participativa El nuevo estatuto crea una Dirección Adjunta y un […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46800"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46800",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46800",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Aprobado el nuevo estatuto de la AEMPS que refuerza la estructura de la Agencia y la adapta a las necesidades actuales",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
