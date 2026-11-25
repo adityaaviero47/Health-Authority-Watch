@@ -1,0 +1,472 @@
+{
+ "run_at": "2026-11-25T11:39Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.5,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml: HTTP 404",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 0.0,
+   "fail_streak": 1
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.7,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.8,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 62.6,
+   "fail_streak": 14
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0176-2027\"",
+   "title": "Class II recall: ORL Organic Oral Care Cinnamint toothpaste, 4 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA UPC# 850006245512",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "extra": {
+    "native_id": "D-0176-2027",
+    "fda_class": "Class II",
+    "firm": "ORL Labs LLC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0176-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0176-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: ORL Organic Oral Care Cinnamint toothpaste, 4 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA UPC# 850006245512",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0177-2027\"",
+   "title": "Class II recall: ORL Organic Oral Care Fresh Mint natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC 850006245499",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "extra": {
+    "native_id": "D-0177-2027",
+    "fda_class": "Class II",
+    "firm": "ORL Labs LLC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0177-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0177-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: ORL Organic Oral Care Fresh Mint natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC 850006245499",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0180-2027\"",
+   "title": "Class II recall: ORL Organic Oral Care Fresh mint mouthwash, 16.9 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245451",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "extra": {
+    "native_id": "D-0180-2027",
+    "fda_class": "Class II",
+    "firm": "ORL Labs LLC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0180-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0180-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: ORL Organic Oral Care Fresh mint mouthwash, 16.9 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245451",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0178-2027\"",
+   "title": "Class II recall: ORL Organic Oral Care Bubblegum Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245475",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "extra": {
+    "native_id": "D-0178-2027",
+    "fda_class": "Class II",
+    "firm": "ORL Labs LLC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0178-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0178-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: ORL Organic Oral Care Bubblegum Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245475",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0189-2027\"",
+   "title": "Class I recall: UMARY Acido Hialuronico, also known as: \"New Hyaluronic Acid 850mg Sealed 30 Caps\", Suplemento Alimenticio, Contenido Neto: 30 capletas de 850 mg.",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Marketed without approved NDA/ANDA- FDA laboratory analysis found product to be tainted with undeclared ingredients: Dexamethasone, Diclofenac and Omeprazole.",
+   "extra": {
+    "native_id": "D-0189-2027",
+    "fda_class": "Class I",
+    "firm": "IBeautiStore.com"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class I",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0189-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0189-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class I recall: UMARY Acido Hialuronico, also known as: \"New Hyaluronic Acid 850mg Sealed 30 Caps\", Suplemento Alimenticio, Contenido Neto: 30 capletas de 850 mg.",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0179-2027\"",
+   "title": "Class II recall: Organic Oral Care Cinnamint Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, 16.9 oz. UPC# #850006245468",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "extra": {
+    "native_id": "D-0179-2027",
+    "fda_class": "Class II",
+    "firm": "ORL Labs LLC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0179-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0179-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: Organic Oral Care Cinnamint Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, 16.9 oz. UPC# #850006245468",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0175-2027\"",
+   "title": "Class II recall: ORL Organic Oral Care Bubblegum Kids natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL LAbs, LLC, Scottsdale, Arizona, USA, UPC# 850006245505",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "extra": {
+    "native_id": "D-0175-2027",
+    "fda_class": "Class II",
+    "firm": "ORL Labs LLC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0175-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0175-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: ORL Organic Oral Care Bubblegum Kids natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL LAbs, LLC, Scottsdale, Arizona, USA, UPC# 850006245505",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0185-2027\"",
+   "title": "Class II recall: Famotidine Injection, 200 mg per 50 mL (4 mg per mL), 1 x 50 mL Multi-Dose Vial, For Intravenous Use, Rx only, Sterile, Mfd. for SAGENT Pharmaceuticals, Schaumb",
+   "published": "2026-11-11",
+   "updated": "",
+   "summary": "Presence of Particulate Matter",
+   "extra": {
+    "native_id": "D-0185-2027",
+    "fda_class": "Class II",
+    "firm": "Sagent Pharmaceuticals"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0185-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0185-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: Famotidine Injection, 200 mg per 50 mL (4 mg per mL), 1 x 50 mL Multi-Dose Vial, For Intravenous Use, Rx only, Sterile, Mfd. for SAGENT Pharmaceuticals, Schaumb",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0172-2027\"",
+   "title": "Class II recall: Cyanocobalamin Injection, USP, 1000 mcg/mL, 25 x 1 mL multi-dose vials, Rx only, American Regent INC, Shirley, NY, 11967, NDC 0517-0031-25, (Vial NDC: 0517-0031",
+   "published": "2026-11-04",
+   "updated": "",
+   "summary": "Presence of Particulate matter: Identified as glass",
+   "extra": {
+    "native_id": "D-0172-2027",
+    "fda_class": "Class II",
+    "firm": "American Regent, Inc."
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0172-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0172-2027",
+    "relevance": "high",
+    "severity": 1,
+    "category": "recall",
+    "english_title": "Class II recall: Cyanocobalamin Injection, USP, 1000 mcg/mL, 25 x 1 mL multi-dose vials, Rx only, American Regent INC, Shirley, NY, 11967, NDC 0517-0031-25, (Vial NDC: 0517-0031",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency/about/complaints-procedure",
+   "title": "Complaints procedure - Medicines and Healthcare products Regulatory Agency",
+   "published": "2026-11-25",
+   "updated": "2026-11-25T10:07:14Z",
+   "summary": "How to make a complaint about a service provided by the Medicines and Healthcare products Regulatory Agency.",
+   "extra": {
+    "native_id": "/government/organisations/medicines-and-healthcare-products-regulatory-agency/about/complaints-procedure",
+    "format": "complaints_procedure"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/organisations/medicines-and-healthcare-products-regulatory-agency/about/complaints-procedure",
+   "assessment": {
+    "id": "mhra_govuk:/government/organisations/medicines-and-healthcare-products-regulatory-agency/about/complaints-procedure",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Complaints procedure - Medicines and Healthcare products Regulatory Agency",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/drug-device-alerts/class-3-medicines-recall-mercury-pharmaceuticals-limited-bexarotene-75-mg-soft-capsules-el-26-a-slash-51",
+   "title": "Class 3 Medicines Recall: Mercury Pharmaceuticals Limited, Bexarotene 75 mg soft capsules, EL(26)A/51",
+   "published": "2026-11-25",
+   "updated": "2026-11-25T10:00:05Z",
+   "summary": "Mercury Pharmaceuticals Limited is recalling Bexarotene 75 mg Soft Capsules, batch 5GJ0551, as a precautionary measure following the identification of several capsules with black/blue spots during additional Acceptable Quality Limit (AQL) testing at the pre-wholesaler’s site.",
+   "extra": {
+    "native_id": "/drug-device-alerts/class-3-medicines-recall-mercury-pharmaceuticals-limited-bexarotene-75-mg-soft-capsules-el-26-a-slash-51",
+    "format": "medical_safety_alert"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/drug-device-alerts/class-3-medicines-recall-mercury-pharmaceuticals-limited-bexarotene-75-mg-soft-capsules-el-26-a-slash-51",
+   "assessment": {
+    "id": "mhra_govuk:/drug-device-alerts/class-3-medicines-recall-mercury-pharmaceuticals-limited-bexarotene-75-mg-soft-capsules-el-26-a-slash-51",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "recall",
+    "english_title": "Class 3 Medicines Recall: Mercury Pharmaceuticals Limited, Bexarotene 75 mg soft capsules, EL(26)A/51",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/guidance-on-pharmacovigilance-procedures",
+   "title": "Guidance on pharmacovigilance procedures",
+   "published": "2026-11-25",
+   "updated": "2026-11-25T09:23:12Z",
+   "summary": "This guidance summarises our approach to pharmacovigilance",
+   "extra": {
+    "native_id": "/government/publications/guidance-on-pharmacovigilance-procedures",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/guidance-on-pharmacovigilance-procedures",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/guidance-on-pharmacovigilance-procedures",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Guidance on pharmacovigilance procedures",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-actualiza-las-condiciones-de-autorizacion-de-formatos-para-dispensacion-fraccionada-de-medicamentos-veterinarios/",
+   "title": "La AEMPS actualiza las condiciones de autorización de formatos para dispensación fraccionada de medicamentos veterinarios",
+   "published": "2026-11-25",
+   "updated": "",
+   "summary": "Generar pdf Fecha de publicación: 25 de noviembre de 2026 Categoría: medicamentos veterinarios Referencia: MVET, 14/2026 La actualización adecua los requisitos regulatorios de la dispensación fraccionada a las necesidades de los medicamentos veterinarios Las solicitudes deberán tramitarse mediante el procedimiento de asesoría regulatoria de la AEMPS con su correspondiente tasa También se flexibilizan los requisitos […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46815"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46815",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46815",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS actualiza las condiciones de autorización de formatos para dispensación fraccionada de medicamentos veterinarios",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "fda_recalls",
+   "authority": "US FDA",
+   "language": "en",
+   "url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:\"D-0174-2027\"",
+   "title": "Class II recall: Lisdexamfetamine Dimesylate Capsules 40 mg, 100-count bottle, Rx Only, Manufactured by: Ohm Laboratories, New Brunswick, NJ 08901, Distributed by: Sun Pharmaceu",
+   "published": "2026-11-18",
+   "updated": "",
+   "summary": "Failed Dissolution Specifications",
+   "extra": {
+    "native_id": "D-0174-2027",
+    "fda_class": "Class II",
+    "firm": "SUN PHARMACEUTICAL INDUSTRIES INC"
+   },
+   "watch": {
+    "status": "Ongoing",
+    "classification": "Class II",
+    "termination_date": ""
+   },
+   "item_id": "fda_recalls:D-0174-2027",
+   "assessment": {
+    "id": "fda_recalls:D-0174-2027",
+    "relevance": "low",
+    "severity": 3,
+    "category": "recall",
+    "english_title": "Class II recall: Lisdexamfetamine Dimesylate Capsules 40 mg, 100-count bottle, Rx Only, Manufactured by: Ohm Laboratories, New Brunswick, NJ 08901, Distributed by: Sun Pharmaceu",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
