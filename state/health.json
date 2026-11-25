@@ -5,31 +5,28 @@
   "items": 30,
   "ok": true,
   "problems": [],
-  "seconds": 0.8,
+  "seconds": 1.5,
   "source": "aemps_es"
  },
  "cdsco_notices": {
   "authority": "India CDSCO",
-  "fail_streak": 14,
+  "fail_streak": 15,
   "items": 0,
   "ok": false,
   "problems": [
    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
    "only 0 items (min 5)"
   ],
-  "seconds": 62.6,
+  "seconds": 60.9,
   "source": "cdsco_notices"
  },
  "fda_medwatch": {
   "authority": "US FDA",
-  "fail_streak": 1,
-  "items": 0,
-  "ok": false,
-  "problems": [
-   "collect failed: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml: HTTP 404",
-   "only 0 items (min 5)"
-  ],
-  "seconds": 0.0,
+  "fail_streak": 0,
+  "items": 20,
+  "ok": true,
+  "problems": [],
+  "seconds": 0.2,
   "source": "fda_medwatch"
  },
  "fda_recalls": {
@@ -38,7 +35,7 @@
   "items": 100,
   "ok": true,
   "problems": [],
-  "seconds": 0.5,
+  "seconds": 0.4,
   "source": "fda_recalls"
  },
  "mhra_govuk": {
@@ -47,7 +44,7 @@
   "items": 50,
   "ok": true,
   "problems": [],
-  "seconds": 0.7,
+  "seconds": 0.3,
   "source": "mhra_govuk"
  }
 }
