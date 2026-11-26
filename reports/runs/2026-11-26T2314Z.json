@@ -1,0 +1,187 @@
+{
+ "run_at": "2026-11-26T23:14Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml: HTTP 401",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 0.2,
+   "fail_streak": 1
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.4,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 62.3,
+   "fail_streak": 17
+  }
+ ],
+ "changes": [
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/apply-for-the-ai-in-mental-health-airlock",
+   "title": "Apply for the AI in Mental Health Airlock",
+   "published": "2026-11-26",
+   "updated": "2026-11-26T15:55:58Z",
+   "summary": "The call for applications for the AI in Mental Health Airlock is now open.",
+   "extra": {
+    "native_id": "/government/publications/apply-for-the-ai-in-mental-health-airlock",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/apply-for-the-ai-in-mental-health-airlock",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/apply-for-the-ai-in-mental-health-airlock",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Apply for the AI in Mental Health Airlock",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-november-2026",
+   "title": "MHRA Safety Roundup: November 2026",
+   "published": "2026-11-26",
+   "updated": "2026-11-26T13:59:39Z",
+   "summary": "Summary of the latest safety advice for medicines and medical device users",
+   "extra": {
+    "native_id": "/drug-device-alerts/mhra-safety-roundup-november-2026",
+    "format": "medical_safety_alert"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/drug-device-alerts/mhra-safety-roundup-november-2026",
+   "assessment": {
+    "id": "mhra_govuk:/drug-device-alerts/mhra-safety-roundup-november-2026",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "MHRA Safety Roundup: November 2026",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-obicetrapib-and-ezetimibe-for-adults-with-high-cholesterol-when-current-treatments-are-insufficient",
+   "title": "MHRA authorises obicetrapib and ezetimibe for adults with high cholesterol when current treatments are insufficient",
+   "published": "2026-11-26",
+   "updated": "2026-11-26T12:23:39Z",
+   "summary": "As with any medicine, the MHRA will keep the safety and effectiveness of obicetrapib and ezetimibe under close review.",
+   "extra": {
+    "native_id": "/government/news/mhra-authorises-obicetrapib-and-ezetimibe-for-adults-with-high-cholesterol-when-current-treatments-are-insufficient",
+    "format": "press_release"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/mhra-authorises-obicetrapib-and-ezetimibe-for-adults-with-high-cholesterol-when-current-treatments-are-insufficient",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/mhra-authorises-obicetrapib-and-ezetimibe-for-adults-with-high-cholesterol-when-current-treatments-are-insufficient",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "MHRA authorises obicetrapib and ezetimibe for adults with high cholesterol when current treatments are insufficient",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-de-la-retirada-de-un-lote-del-medicamento-veterinario-camdolor-20mg-ml-solucion-inyectable-para-bovino-porcino-y-caballos/",
+   "title": "La AEMPS informa de la retirada de un lote del medicamento veterinario Camdolor 20mg/ml solución inyectable para bovino, porcino y caballos",
+   "published": "2026-11-26",
+   "updated": "",
+   "summary": "Generar pdf Fecha de publicación: 26 de noviembre de 2026 Categoría: medicamentos veterinarios, defectos de calidad Referencia: Alerta VDC, 05/2026 La retirada se ha producido tras la detección de una deficiencia en el sistema de cierre El lote afectado en España es el C42263/C La Agencia Española de Medicamentos y Productos Sanitarios (AEMPS) informa de […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46822"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46822",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46822",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "recall",
+    "english_title": "La AEMPS informa de la retirada de un lote del medicamento veterinario Camdolor 20mg/ml solución inyectable para bovino, porcino y caballos",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/camdolor-20-mg-ml-solucion-inyectable-para-bovino-porcino-y-caballos-3841-esp/",
+   "title": "CAMDOLOR 20 MG/ML SOLUCION INYECTABLE PARA BOVINO PORCINO Y CABALLOS (3841 ESP)",
+   "published": "2026-11-26",
+   "updated": "",
+   "summary": "Formato pdf Fecha de publicación: 26 de noviembre de 2026 Referencia: DMV/MMJ Nº de Alerta: VDC 05/2026 Fecha: 26.11.2026 Productos: CAMDOLOR 20 MG/ML SOLUCION INYECTABLE PARA BOVINO PORCINO Y CABALLOS (3841 ESP) Nombre del Medicamento Veterinario y Nº registro: CAMDOLOR 20 MG/ML SOLUCION INYECTABLE PARA BOVINO PORCINO Y CABALLOS (3841 ESP) Laboratorio titular: C&H GENERICS […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46824"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46824",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46824",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "CAMDOLOR 20 MG/ML SOLUCION INYECTABLE PARA BOVINO PORCINO Y CABALLOS (3841 ESP)",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
