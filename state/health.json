@@ -5,19 +5,19 @@
   "items": 30,
   "ok": true,
   "problems": [],
-  "seconds": 1.5,
+  "seconds": 1.6,
   "source": "aemps_es"
  },
  "cdsco_notices": {
   "authority": "India CDSCO",
-  "fail_streak": 15,
+  "fail_streak": 16,
   "items": 0,
   "ok": false,
   "problems": [
    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
    "only 0 items (min 5)"
   ],
-  "seconds": 60.9,
+  "seconds": 63.6,
   "source": "cdsco_notices"
  },
  "fda_medwatch": {
@@ -26,7 +26,7 @@
   "items": 20,
   "ok": true,
   "problems": [],
-  "seconds": 0.2,
+  "seconds": 0.1,
   "source": "fda_medwatch"
  },
  "fda_recalls": {
@@ -35,7 +35,7 @@
   "items": 100,
   "ok": true,
   "problems": [],
-  "seconds": 0.4,
+  "seconds": 0.1,
   "source": "fda_recalls"
  },
  "mhra_govuk": {
