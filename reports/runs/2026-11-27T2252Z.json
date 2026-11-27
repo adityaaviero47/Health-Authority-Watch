@@ -1,0 +1,184 @@
+{
+ "run_at": "2026-11-27T22:52Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.5,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.8,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 60.6,
+   "fail_streak": 19
+  }
+ ],
+ "changes": [
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/mhra-approves-zanidatamab-ziihera-for-the-treatment-of-gastroesophageal-cancer",
+   "title": "MHRA approves zanidatamab (Ziihera) for the treatment of gastroesophageal cancer",
+   "published": "2026-11-27",
+   "updated": "2026-11-27T15:41:22Z",
+   "summary": "The Medicines and Healthcare products Regulatory Agency (MHRA) has today, 27 November 2026, approved a variation to the existing authorisation for zanidatamab (Ziihera) for the treatment of gastroesophageal cancer in adults",
+   "extra": {
+    "native_id": "/government/news/mhra-approves-zanidatamab-ziihera-for-the-treatment-of-gastroesophageal-cancer",
+    "format": "press_release"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/mhra-approves-zanidatamab-ziihera-for-the-treatment-of-gastroesophageal-cancer",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/mhra-approves-zanidatamab-ziihera-for-the-treatment-of-gastroesophageal-cancer",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "MHRA approves zanidatamab (Ziihera) for the treatment of gastroesophageal cancer",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/news/mhra-approves-linvoseltamab-to-treat-adults-with-multiple-myeloma",
+   "title": "MHRA approves linvoseltamab to treat adults with multiple myeloma",
+   "published": "2026-11-27",
+   "updated": "2026-11-27T14:26:03Z",
+   "summary": "The Medicines and Healthcare products Regulatory Agency (MHRA) has approved linvoseltamab (Lynozyfic), a cancer medicine used to treat adults with multiple myeloma, a type of cancer of the bone marrow.",
+   "extra": {
+    "native_id": "/government/news/mhra-approves-linvoseltamab-to-treat-adults-with-multiple-myeloma",
+    "format": "press_release"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/news/mhra-approves-linvoseltamab-to-treat-adults-with-multiple-myeloma",
+   "assessment": {
+    "id": "mhra_govuk:/government/news/mhra-approves-linvoseltamab-to-treat-adults-with-multiple-myeloma",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "MHRA approves linvoseltamab to treat adults with multiple myeloma",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/medicines-that-cannot-be-parallel-exported-from-the-uk",
+   "title": "Medicines that you cannot export from the UK or hoard",
+   "published": "2026-11-27",
+   "updated": "2026-11-27T11:34:58Z",
+   "summary": "Sets out medicines that cannot be exported from the UK or hoarded because they are needed for UK patients.",
+   "extra": {
+    "native_id": "/government/publications/medicines-that-cannot-be-parallel-exported-from-the-uk",
+    "format": "guidance"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/medicines-that-cannot-be-parallel-exported-from-the-uk",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/medicines-that-cannot-be-parallel-exported-from-the-uk",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Medicines that you cannot export from the UK or hoard",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/boletin-sobre-seguridad-de-medicamentos-de-uso-humano-octubre-de-2026/",
+   "title": "Boletín sobre Seguridad de Medicamentos de Uso Humano. Octubre de 2026",
+   "published": "2026-11-27",
+   "updated": "",
+   "summary": "Fecha de publicación: 27 de noviembre de 2026NIPO: 134-24-010-2 Índice Comunicaciones sobre seguridad de medicamentos Nueva información de seguridad procedente de la evaluación periódica de los datos de farmacovigilancia Información sobre prevención de riesgos autorizada por la AEMPS (materiales informativos de seguridad) Otra información relevante El Boletín sobre Seguridad de Medicamentos de Uso Humano del […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46844"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46844",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46844",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "safety_alert",
+    "english_title": "Boletín sobre Seguridad de Medicamentos de Uso Humano. Octubre de 2026",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-de-la-finalizacion-del-periodo-transitorio-para-realizar-las-comunicaciones-de-comercializacion-en-recops-y-actualiza-la-informacion-para-los-agentes-economicos/",
+   "title": "La AEMPS informa de la finalización del periodo transitorio para realizar las comunicaciones de comercialización en RECOPS y actualiza la información para los agentes económicos",
+   "published": "2026-11-27",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 27 de noviembre de 2026 Categoría: productos sanitarios Referencia: PS, 50/2026 El 28 de noviembre de 2026 finaliza el periodo transitorio para realizar las comunicaciones de comercialización en RECOPS, de acuerdo con el calendario establecido para EUDAMED La descarga desde EUDAMED está limitada a un máximo de 60.000 UDI-DI diarios, […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46841"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46841",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46841",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS informa de la finalización del periodo transitorio para realizar las comunicaciones de comercialización en RECOPS y actualiza la información para los agentes económicos",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
