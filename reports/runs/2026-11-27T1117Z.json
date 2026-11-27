@@ -1,0 +1,107 @@
+{
+ "run_at": "2026-11-27T11:17Z",
+ "model": "rules",
+ "health": [
+  {
+   "source": "fda_recalls",
+   "authority": "US FDA",
+   "items": 100,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.4,
+   "fail_streak": 0
+  },
+  {
+   "source": "fda_medwatch",
+   "authority": "US FDA",
+   "items": 20,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.2,
+   "fail_streak": 0
+  },
+  {
+   "source": "mhra_govuk",
+   "authority": "UK MHRA",
+   "items": 50,
+   "ok": true,
+   "problems": [],
+   "seconds": 0.9,
+   "fail_streak": 0
+  },
+  {
+   "source": "aemps_es",
+   "authority": "Spain AEMPS",
+   "items": 30,
+   "ok": true,
+   "problems": [],
+   "seconds": 1.1,
+   "fail_streak": 0
+  },
+  {
+   "source": "cdsco_notices",
+   "authority": "India CDSCO",
+   "items": 0,
+   "ok": false,
+   "problems": [
+    "collect failed: TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/\", waiting until \"networkidle\"\n",
+    "only 0 items (min 5)"
+   ],
+   "seconds": 60.8,
+   "fail_streak": 18
+  }
+ ],
+ "changes": [
+  {
+   "status": "revised",
+   "source_id": "mhra_govuk",
+   "authority": "UK MHRA",
+   "language": "en",
+   "url": "https://www.gov.uk/government/publications/medical-devices-given-exceptional-use-authorisations",
+   "title": "Medical devices given exceptional use authorisations",
+   "published": "2026-11-27",
+   "updated": "2026-11-27T10:47:34Z",
+   "summary": "List of manufacturers and their medical devices granted an exemption by MHRA. The list also includes manufacturers whose exemption expired or was cancelled.",
+   "extra": {
+    "native_id": "/government/publications/medical-devices-given-exceptional-use-authorisations",
+    "format": "decision"
+   },
+   "watch": {},
+   "item_id": "mhra_govuk:/government/publications/medical-devices-given-exceptional-use-authorisations",
+   "assessment": {
+    "id": "mhra_govuk:/government/publications/medical-devices-given-exceptional-use-authorisations",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "Medical devices given exceptional use authorisations",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  },
+  {
+   "status": "new",
+   "source_id": "aemps_es",
+   "authority": "Spain AEMPS",
+   "language": "es",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-publica-el-informe-anual-del-codi-vet-sobre-vacios-terapeuticos-3/",
+   "title": "La AEMPS publica el Informe Anual del CODI-VET sobre Vacíos Terapéuticos",
+   "published": "2026-11-27",
+   "updated": "",
+   "summary": "Generar PDF Fecha de publicación: 27 de noviembre de 2026 Categoría: medicamentos veterinarios, CODI VET Referencia: MVET (CODI VET), 02/2026 El objetivo del documento es identificar los principales vacíos terapéuticos en las distintas especies animales para orientar a la industria en sus investigaciones y desarrollo de medicamentos veterinarios El informe identifica necesidades profilácticas, terapéuticas, hormonales […]",
+   "extra": {
+    "native_id": "https://www.aemps.gob.es/?p=46831"
+   },
+   "watch": {},
+   "item_id": "aemps_es:https://www.aemps.gob.es/?p=46831",
+   "assessment": {
+    "id": "aemps_es:https://www.aemps.gob.es/?p=46831",
+    "relevance": "medium",
+    "severity": 2,
+    "category": "other",
+    "english_title": "La AEMPS publica el Informe Anual del CODI-VET sobre Vacíos Terapéuticos",
+    "reason": "keyword rule",
+    "by": "rules"
+   }
+  }
+ ]
+}
